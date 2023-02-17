@@ -1,7 +1,4 @@
-import {
-  createRouter,
-  createWebHistory,
-} from "../../node_modules/vue-router/dist/vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import SuccessView from "../views/SuccessView.vue";
