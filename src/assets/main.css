@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Rubik";
+    src: url(../../public/font/Rubik/static/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Rubik Medium";
+    src: url(../../public/font/Rubik/static/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Rubik Light";
+    src: url(../../public/font/Rubik/static/Rubik-Light.ttf);
+}
+
+body {
+    font-weight: 16px;
+    font-family: "Rubik Medium";
+    color: #363636;
+}
+
+.c-blue-500 {
+    color: #22578D
+}
+
+
+.c-green-500 {
+    color: #22828D;
+}
+
+.c-grey-500 {
+    color: #808080;
+}
+
+.c-grey-900 {
+    color: #363636;
+}
+
+.border-grey-900 {
+    border-color: #363636;
+}
+
+.border-grey-100 {
+    border-color: #D8D8D8;
+}
+
+.b-blue-50 {
+    background: #E9EEF4;
+}
+
+.b-blue-500 {
+    background: #22578D
+}
+
+.b-green-500 {
+    background: #22828D;
+}
+
+.c-grey-50 {
+    color: #F2F2F2
+}
+
+.linier-blue-900 {
+    background: linear-gradient(142.01deg, #0E253B 44.02%, rgba(14, 37, 59, 0.77) 107.67%);
+}
+
+h1.title-banner {
+    font-size: 54px;
+    line-height: 81px;
+}
+
+h4.title-section {
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.card-solution {
+    border: 2px solid;
+    border-image-source: linear-gradient(29.32deg, rgba(34, 130, 141, 0.44) 20.08%, rgba(34, 130, 141, 0.15) 78.87%);
+}
+
+.desc-banner {
+    font-size: 24px;
+    line-height: 36px;
+}
