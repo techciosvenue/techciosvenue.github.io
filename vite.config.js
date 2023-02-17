@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
-  base: "/techciosvenue.github.io/",
+  // base: "/techciosvenue.github.io/",
   plugins: [vue()],
   resolve: {
     alias: {
