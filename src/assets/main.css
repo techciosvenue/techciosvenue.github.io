@@ -18,7 +18,7 @@
 }
 
 body {
-    font-weight: 16px;
+    font-size: 16px;
     font-family: "Rubik Medium";
     color: #363636;
 }
@@ -38,6 +38,10 @@ body {
 
 .c-grey-900 {
     color: #363636;
+}
+
+.b-grey-50 {
+    background: #f2f2f2;
 }
 
 .border-grey-900 {
@@ -86,4 +90,116 @@ h4.title-section {
 .desc-banner {
     font-size: 24px;
     line-height: 36px;
+}
+
+.w-page {
+    width: 100%;
+}
+
+.mr-card {
+    margin-right: 80px
+}
+
+.card-page-success {
+    padding-top: 175px;
+    padding-bottom: 165px
+}
+
+.w-card-container {
+    width: 100%;
+}
+
+/*// Extra small devices (portrait phones, less than 360px)*/
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .w-card-container {
+        padding: 0 16px;
+    }
+
+    .header {
+        background-color: #ffffff !important;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    h1.title-banner {
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .desc-banner {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    h4.title-section {
+        font-size: 24px;
+    }
+
+    .mr-card {
+        margin: 0 16px;
+        padding: 0;
+        padding-bottom: 100px;
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .w-page {
+        width: 100%;
+    }
+
+    .w-card-container {
+        width: 1204px
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .desc-banner {
+        font-size: 18px;
+    }
+
+    h1.title-banner {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    h4.title-section {
+        font-size: 24px;
+    }
+
+}
+
+@media (min-width: 1367px) and (max-width: 5000px) {
+    .w-page {
+        width: 1920px;
+    }
+
+    .w-card-container {
+        width: 1520px
+    }
+
+    .mr-card {
+        margin-right: 200px
+    }
+
+    .card-page-success {
+        padding-top: 227px;
+        padding-bottom: 213px
+    }
+
+    .desc-banner {
+        font-size: 24px !important;
+        line-height: 36px !important;
+    }
 }

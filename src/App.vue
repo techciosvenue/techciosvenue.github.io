@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <div style="width: 1920px">
+  <div class="w-page">
     <Header />
     <RouterView />
     <Footer />

@@ -2,20 +2,22 @@
 
 <template>
   <secion class="flex flex-wrap justify-center b-blue-50">
-    <div class="relative" style="width: 1520px">
-      <div class="grid grid-cols-2 pb-14 pt-40">
-        <div class="flex flex-wrap content-center">
-          <h1 class="title-banner font-semibold c-blue-500 w-10/12 mb-6">
+    <div class="relative w-card-container">
+      <div class="grid grid-cols-2 max-sm:grid-cols-1 pb-14 pt-40 max-sm:pt-32">
+        <div class="flex flex-wrap content-center max-sm:text-center">
+          <h1
+            class="title-banner font-semibold c-blue-500 w-10/12 mb-6 max-sm:w-full"
+          >
             Temukan Venue untuk Kebutuhan Kamu Selanjutnya
           </h1>
-          <div class="desc-banner text-base font-normal w-10/12">
+          <div class="desc-banner text-base font-normal w-10/12 max-sm:w-full">
             Cari dan sewa venue dengan mudah dan cepat menggunakan aplikasi
             Cios.
           </div>
-          <div class="mt-20">
+          <div class="mt-20 max-sm:text-center max-sm:w-full max-sm:mb-16">
             <RouterLink to="/register">
               <ButtonLink
-                class="py-4 px-6 text-white b-green-500 font-semibold rounded-2xl"
+                class="py-4 px-6 2xl:py-4 2xl:px-6 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:m-auto"
                 text="Buat Akun"
               />
             </RouterLink>
@@ -25,51 +27,53 @@
           <img :src="banner" alt="" />
         </div>
       </div>
-      <div class="grid grid-cols-4 gap-4 relative w-full pb-14">
+      <div
+        class="grid grid-cols-4 max-sm:grid-cols-1 gap-4 relative w-full pb-14"
+      >
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="Workshop" alt="" />
           Workshop
         </div>
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="Photoshoot" alt="" />
           Photoshoot
         </div>
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="Videoshoot" alt="" />
           Videoshoot
         </div>
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="Meeting" alt="" />
           Meeting
         </div>
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="LiveMusic" alt="" />
           Live Music
         </div>
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="Pesta" alt="" />
           Pesta
         </div>
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="Gathering" alt="" />
           Gathering
         </div>
         <div
-          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-2xl"
+          class="flex flex-row gap-6 py-4 px-9 font-semibold content-center align-middle bg-white c-blue-500 rounded-lg 2xl:rounded-2xl"
         >
           <img :src="Wedding" alt="" />
           Wedding
@@ -78,32 +82,38 @@
     </div>
   </secion>
   <secion class="flex flex-wrap justify-center">
-    <div class="relative" style="width: 1520px">
-      <div class="flex flex-col mt-28 mb-40">
-        <h4 class="title-section font-semibold c-blue-500 text-center mb-28">
+    <div class="relative w-card-container">
+      <div class="flex flex-col mt-28 max-sm:mt-16 mb-40">
+        <h4
+          class="title-section font-semibold c-blue-500 text-center mb-28 max-sm:mb-16"
+        >
           Sewa Venue Menjadi Lebih Mudah di CIOS
         </h4>
-        <div class="grid grid-cols-2">
-          <div class="flex flex-wrap content-center">
-            <div class="font-semibold c-blue-500 text-2xl mb-6">
+        <div class="grid grid-cols-2 max-sm:grid-cols-1">
+          <div
+            class="flex flex-wrap content-center max-sm:order-1 max-sm:mb-16"
+          >
+            <div class="font-semibold c-blue-500 text-base 2xl:text-2xl mb-6">
               Sebagai Owner, kamu bisa...
             </div>
-            <div class="desc-banner text-2xl font-normal w-10/12">
+            <div class="desc-banner text-base 2xl:text-2xl font-normal w-10/12">
               Mengatur venue yang kamu punya, menerima booking request dan
               melihat report riwayat booking dalam aplikasi CIOS.
             </div>
           </div>
-          <div class="flex justify-start mb-44">
+          <div class="flex justify-start mb-44 max-sm:mb-16 max-sm:order-2">
             <img :src="banner2" alt="" />
           </div>
-          <div class="flex justify-end">
+          <div class="flex justify-end max-sm:order-last">
             <img :src="banner3" alt="" />
           </div>
-          <div class="flex flex-wrap content-center ml-32">
-            <div class="font-semibold c-blue-500 text-2xl mb-6">
+          <div
+            class="flex flex-wrap content-center ml-32 max-sm:order-3 max-sm:ml-0 max-sm:mb-16"
+          >
+            <div class="font-semibold c-blue-500 text-base 2xl:text-2xl mb-6">
               Sebagai Penyewa, kamu bisa...
             </div>
-            <div class="desc-banner text-2xl font-normal">
+            <div class="desc-banner text-base 2xl:text-2xl font-normal">
               Menemukan venue yang cocok untuk kebutuhan, melihat detail venue
               sampai melakukan booking lewat aplikasi CIOS.
             </div>
@@ -113,55 +123,73 @@
     </div>
   </secion>
   <secion class="flex flex-wrap justify-center b-blue-50">
-    <div class="relative" style="width: 1520px">
-      <div class="flex flex-col mt-28 mb-40">
-        <h4 class="title-section font-semibold c-green-500 text-center mb-28">
+    <div class="relative w-card-container">
+      <div class="flex flex-col mt-28 max-sm:mt-16 mb-40">
+        <h4
+          class="title-section font-semibold c-green-500 text-center mb-28 max-sm:mb-16"
+        >
           Sewa Venue Menjadi Lebih Mudah di CIOS
         </h4>
-        <div class="grid grid-cols-4 gap-4">
-          <div class="bg-white rounded-2xl px-10 py-12 card-solution">
+        <div class="grid grid-cols-4 max-sm:grid-cols-1 gap-4">
+          <div
+            class="bg-white rounded-lg 2xl:rounded-2xl px-10 py-12 card-solution"
+          >
             <div class="flex flex-col gap-6">
               <div>
                 <img :src="Jam" alt="" />
               </div>
-              <div class="c-green-500 font-semibold text-2xl">Sewa Perjam</div>
-              <div class="font-normal leading-7 c-grey-900">
+              <div class="c-green-500 font-semibold text-base 2xl:text-2xl">
+                Sewa Perjam
+              </div>
+              <div class="font-normal 2xl:leading-7 c-grey-900">
                 Penyewa tidak perlu menyewa venue untuk satu hari jika yang
                 dibutuhkan hanya beberapa jam.
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-2xl px-10 py-12 card-solution">
+          <div
+            class="bg-white rounded-lg 2xl:rounded-2xl px-10 py-12 card-solution"
+          >
             <div class="flex flex-col gap-6">
               <div>
                 <img :src="Opsi" alt="" />
               </div>
-              <div class="c-green-500 font-semibold text-2xl">Sewa Perjam</div>
-              <div class="font-normal leading-7 c-grey-900">
+              <div class="c-green-500 font-semibold text-base 2xl:text-2xl">
+                Sewa Perjam
+              </div>
+              <div class="font-normal 2xl:leading-7 c-grey-900">
                 Penyewa tidak perlu menyewa venue untuk satu hari jika yang
                 dibutuhkan hanya beberapa jam.
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-2xl px-10 py-12 card-solution">
+          <div
+            class="bg-white rounded-lg 2xl:rounded-2xl px-10 py-12 card-solution"
+          >
             <div class="flex flex-col gap-6">
               <div>
                 <img :src="Informasi" alt="" />
               </div>
-              <div class="c-green-500 font-semibold text-2xl">Sewa Perjam</div>
-              <div class="font-normal leading-7 c-grey-900">
+              <div class="c-green-500 font-semibold text-base 2xl:text-2xl">
+                Sewa Perjam
+              </div>
+              <div class="font-normal 2xl:leading-7 c-grey-900">
                 Penyewa tidak perlu menyewa venue untuk satu hari jika yang
                 dibutuhkan hanya beberapa jam.
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-2xl px-10 py-12 card-solution">
+          <div
+            class="bg-white rounded-lg 2xl:rounded-2xl px-10 py-12 card-solution"
+          >
             <div class="flex flex-col gap-6">
               <div>
                 <img :src="Management" alt="" />
               </div>
-              <div class="c-green-500 font-semibold text-2xl">Sewa Perjam</div>
-              <div class="font-normal leading-7 c-grey-900">
+              <div class="c-green-500 font-semibold text-base 2xl:text-2xl">
+                Sewa Perjam
+              </div>
+              <div class="font-normal 2xl:leading-7 c-grey-900">
                 Penyewa tidak perlu menyewa venue untuk satu hari jika yang
                 dibutuhkan hanya beberapa jam.
               </div>
@@ -172,10 +200,12 @@
     </div>
   </secion>
   <secion class="flex flex-wrap justify-center">
-    <div class="relative" style="width: 1520px">
-      <div class="flex flex-col mt-28 mb-40">
-        <div class="grid grid-cols-2">
-          <div class="flex flex-col justify-start gap-4 w-8/12">
+    <div class="relative w-card-container">
+      <div class="flex flex-col mt-28 max-sm:mt-16 mb-40 max-sm:mb-0">
+        <div class="grid grid-cols-2 max-sm:grid-cols-1">
+          <div
+            class="flex flex-col justify-start gap-4 w-8/12 max-sm:w-full max-sm:mb-16"
+          >
             <div class="flex justify-center gap-4">
               <div>
                 <img :src="banner4_1" alt="" />
@@ -185,19 +215,23 @@
               </div>
             </div>
             <div class="flex justify-center">
-              <img :src="banner4_3" alt="" />
+              <img :src="banner4_3" alt="" class="max-sm:w-1/2" />
             </div>
           </div>
           <div class="flex flex-col gap-16">
             <div class="flex flex-col">
-              <div class="c-blue-500 text-2xl font-semibold mb-14">
+              <div
+                class="c-blue-500 text-base 2xl:text-2xl max-sm:text-2xl font-semibold mb-14 max-sm:text-center"
+              >
                 Cara Sewa Venue Lewat CIOS
               </div>
-              <div class="flex flex-col py-4 text-base px-6 gap-14">
+              <div
+                class="flex flex-col py-4 max-sm:py-0 text-base px-6 max-sm:px-0 gap-14"
+              >
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="w-9 h-9 text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       1
                     </div>
@@ -216,7 +250,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="w-9 h-9 text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       2
                     </div>
@@ -235,7 +269,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="w-9 h-9 text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       3
                     </div>
@@ -254,14 +288,16 @@
               </div>
             </div>
             <div class="flex flex-col">
-              <div class="c-blue-500 text-2xl font-semibold mb-14">
+              <div
+                class="c-blue-500 text-base 2xl:text-2xl max-sm:text-2xl font-semibold mb-14 max-sm:text-center"
+              >
                 Cara Mendaftarkan Venue di CIOS
               </div>
-              <div class="flex flex-col py-4 text-base px-6 gap-14">
+              <div class="flex flex-col py-4 text-base px-6 max-sm:px-0 gap-14">
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="w-9 h-9 text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       1
                     </div>
@@ -280,7 +316,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="w-9 h-9 text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       2
                     </div>
@@ -296,7 +332,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="w-9 h-9 text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       3
                     </div>
@@ -319,9 +355,11 @@
     </div>
   </secion>
   <secion class="flex flex-wrap justify-center">
-    <div class="relative" style="width: 1520px">
-      <div class="flex flex-col mt-28 mb-40 linier-blue-900 rounded-2xl p-14">
-        <div class="grid grid-cols-2 gap-14">
+    <div class="relative w-card-container">
+      <div
+        class="flex flex-col mt-28 mb-40 max-sm:mt-16 max-sm:mb-16 linier-blue-900 rounded-lg 2xl:rounded-2xl p-14 max-sm:p-6 max-sm:text-center"
+      >
+        <div class="grid grid-cols-2 max-sm:grid-cols-1 gap-14">
           <div class="flex flex-col justify-center">
             <img :src="banner5" alt="" />
           </div>
@@ -330,7 +368,7 @@
               Sudah Punya Rencana Untuk Acara Kamu Selanjutnya?
             </h4>
             <div
-              class="text-2xl c-grey-50 font-normal"
+              class="text-base 2xl:text-2xl c-grey-50 font-normal"
               style="line-height: 150%"
             >
               Booking venue keinginan-mu lewat CIOS. Atau kamu punya venue yang
@@ -339,7 +377,7 @@
             <div class="mt-14">
               <RouterLink to="/register">
                 <ButtonLink
-                  class="py-4 px-6 text-white b-green-500 font-semibold rounded-2xl"
+                  class="py-4 px-6 2xl:py-4 2xl:px-6 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl"
                   text="Buat Akun"
                 />
               </RouterLink>

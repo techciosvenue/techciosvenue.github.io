@@ -22,11 +22,11 @@ const router = createRouter({
       component: SuccessView,
     },
 
-    // {
-    //   path: "/:catchAll(.*)",
-    //   component: NotFoundComponent,
-    //   name: "NotFound",
-    // },
+    {
+      path: "/:catchAll(.*)",
+      component: HomeView,
+      name: "home",
+    },
   ],
 });
 

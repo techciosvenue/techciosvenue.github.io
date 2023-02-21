@@ -1,10 +1,7 @@
 <template>
   <secion class="flex flex-wrap justify-center">
-    <div class="relative" style="width: 1520px">
-      <div
-        class="grid grid-cols-2"
-        style="padding-top: 227px; padding-bottom: 213px"
-      >
+    <div class="relative w-card-container">
+      <div class="grid grid-cols-2 max-sm:grid-cols-1 card-page-success">
         <div class="flex flex-col">
           <div class="mb-9">
             <img :src="IconCheck" alt="" />
@@ -12,7 +9,9 @@
           <h4 class="title-section font-semibold c-blue-500 mb-6">
             Terima Kasih!
           </h4>
-          <div class="font-normal leading-9 mb-9 w-10/12">
+          <div
+            class="font-normal leading-7 2xl:leading-9 mb-9 w-10/12 max-sm:w-full"
+          >
             Kami senang dapat membantu kamu untuk <br />menemukan venue yang
             cocok untuk keperluan kamu.
           </div>
