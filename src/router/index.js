@@ -10,26 +10,22 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      props: true,
       component: HomeView,
     },
     {
       path: "/register",
       name: "register",
-      props: true,
       component: RegisterView,
     },
     {
       path: "/success",
       name: "success",
-      props: true,
       component: SuccessView,
     },
 
     {
       path: "/:catchAll(.*)",
       name: "home",
-      props: true,
       component: HomeView,
     },
   ],
