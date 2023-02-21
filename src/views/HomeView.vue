@@ -231,7 +231,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 w-9 h-9 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       1
                     </div>
@@ -250,7 +250,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 w-9 h-9 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       2
                     </div>
@@ -269,7 +269,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 w-9 h-9 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       3
                     </div>
@@ -297,7 +297,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 w-9 h-9 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       1
                     </div>
@@ -316,7 +316,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 w-9 h-9 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       2
                     </div>
@@ -332,7 +332,7 @@
                 <div class="flex flex-row gap-6">
                   <div>
                     <div
-                      class="max-sm:w-6 max-sm:h-6 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
+                      class="max-sm:w-6 max-sm:h-6 w-9 h-9 max-sm:text-xs text-center border flex flex-wrap content-center justify-center border-grey-900 rounded-full"
                     >
                       3
                     </div>
