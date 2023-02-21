@@ -4,7 +4,7 @@ import RegisterView from "../views/RegisterView.vue";
 import SuccessView from "../views/SuccessView.vue";
 
 const router = createRouter({
-  mode: "history",
+  mode: "hash",
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
