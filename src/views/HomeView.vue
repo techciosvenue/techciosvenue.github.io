@@ -17,7 +17,7 @@
           <div class="mt-20 max-sm:text-center max-sm:w-full max-sm:mb-16">
             <RouterLink to="/register">
               <ButtonLink
-                class="py-4 px-6 2xl:py-4 2xl:px-6 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:m-auto"
+                class="py-4 px-6 2xl:py-4 2xl:px-6 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:m-auto whitespace-nowrap"
                 text="Buat Akun"
               />
             </RouterLink>
@@ -155,11 +155,11 @@
                 <img :src="Opsi" alt="" />
               </div>
               <div class="c-green-500 font-semibold text-base 2xl:text-2xl">
-                Sewa Perjam
+                Opsi yang Beragam
               </div>
               <div class="font-normal 2xl:leading-7 c-grey-900">
-                Penyewa tidak perlu menyewa venue untuk satu hari jika yang
-                dibutuhkan hanya beberapa jam.
+                Owner bisa mendaftarkan beragam venue. Penyewa bisa dengan mudah
+                menelurusi opsi venue yang beragam.
               </div>
             </div>
           </div>
@@ -171,11 +171,11 @@
                 <img :src="Informasi" alt="" />
               </div>
               <div class="c-green-500 font-semibold text-base 2xl:text-2xl">
-                Sewa Perjam
+                Informasi Real-time
               </div>
               <div class="font-normal 2xl:leading-7 c-grey-900">
-                Penyewa tidak perlu menyewa venue untuk satu hari jika yang
-                dibutuhkan hanya beberapa jam.
+                Owner bisa mengupdate venuenya dan penyewa bisa langsung melihat
+                ketersediaan venue via aplikasi.
               </div>
             </div>
           </div>
@@ -187,11 +187,11 @@
                 <img :src="Management" alt="" />
               </div>
               <div class="c-green-500 font-semibold text-base 2xl:text-2xl">
-                Sewa Perjam
+                Management Dashboard
               </div>
               <div class="font-normal 2xl:leading-7 c-grey-900">
-                Penyewa tidak perlu menyewa venue untuk satu hari jika yang
-                dibutuhkan hanya beberapa jam.
+                Owner dapat langsung memantau dan mengelola performa melalui
+                dashboard yang ada di aplikasi.
               </div>
             </div>
           </div>
@@ -374,10 +374,10 @@
               Booking venue keinginan-mu lewat CIOS. Atau kamu punya venue yang
               bisa disewakan? Daftarkan di CIOS.
             </div>
-            <div class="mt-14">
+            <div class="mt-14 max-sm:text-center max-sm:w-full">
               <RouterLink to="/register">
                 <ButtonLink
-                  class="py-4 px-6 2xl:py-4 2xl:px-6 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl"
+                  class="py-4 px-6 2xl:py-4 2xl:px-6 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:m-auto whitespace-nowrap"
                   text="Buat Akun"
                 />
               </RouterLink>

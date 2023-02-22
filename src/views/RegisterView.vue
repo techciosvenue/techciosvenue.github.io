@@ -40,6 +40,7 @@
             <label for="" class="font-semibold">Masukkan Ulang Password</label>
             <input
               type="password"
+              v-model="samepassword"
               class="border-2 border-grey-100 rounded-lg 2xl:rounded-2xl 2xl:h-12 h-10 px-6"
             />
           </div>
@@ -83,49 +84,34 @@ import router from "@/router";
 const email = ref("");
 const password = ref("");
 const name = ref("");
+const samepassword = ref("");
 
 async function handleSubmit() {
   try {
-    let { users, session, error } = await supabase.auth.signUp({
-      email: email.value,
-      password: password.value,
-    });
-    console.log("users", users);
-    console.log("session", session);
-    console.log("error", error);
-    router.push("/success");
-
-    // if (user) {
-    //   if (user.id) {
-    //     //user successfully created
-    //     //add user profile to database
-    //     try {
-    //       let { data, error } = await supabase.from("user_detail").insert([
-    //         {
-    //           user_id: user.id,
-    //           name: name.value,
-    //         },
-    //       ]);
-    //       if (data) {
-    //         alert("new user has been added");
-    //         router.push("/");
-    //       }
-    //       if (error) {
-    //         alert(error.message);
-    //       }
-    //     } catch (error) {
-    //       alert(error);
-    //     }
-    //   }
-    //   console.log(user);
-    // }
-    // if (session) {
-    //   // alert(session)
-    //   console.log(session);
-    // }
-    // if (error) {
-    //   alert(error.message);
-    // }
+    if (name.value === "" || !name.value.trim()) {
+      alert("Form nama tidak boleh kosong, silahkan isi terlebih dahulu");
+    } else if (email.value === "" || !email.value.trim()) {
+      alert("Form email tidak boleh kosong, silahkan isi terlebih dahulu");
+    } else if (password.value === "" || !password.value.trim()) {
+      alert("Form password tidak boleh kosong, silahkan isi terlebih dahulu");
+    } else if (samepassword.value === "" || !samepassword.value.trim()) {
+      alert(
+        "Form ulangi password tidak boleh kosong, silahkan isi terlebih dahulu"
+      );
+    } else if (password.value != samepassword.value) {
+      alert(
+        "Form password dan ulangi password harus sama, silahkan cek terlebih dahulu"
+      );
+    } else {
+      let { users, session, error } = await supabase.auth.signUp({
+        email: email.value,
+        password: password.value,
+      });
+      console.log("users", users);
+      console.log("session", session);
+      console.log("error", error);
+      router.push("/success");
+    }
   } catch (error) {
     alert(error);
   }
