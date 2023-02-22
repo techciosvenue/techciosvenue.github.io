@@ -40,7 +40,11 @@
               class="2xl:py-4 2xl:px-6 py-2 px-4 c-blue-500 font-semibold max-sm:border-b max-sm:border-gray-400 max-sm:w-full"
               text="Cara Mulai"
             />
-            <RouterLink to="/register" class="max-sm:px-4">
+            <RouterLink
+              to="/register"
+              class="max-sm:px-4"
+              v-if="$route.path != '/register' && $route.path != '/success'"
+            >
               <ButtonLink
                 class="2xl:py-4 2xl:px-6 py-2 px-4 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:w-full"
                 text="Buat Akun"
@@ -75,7 +79,11 @@
               text="Cara Mulai"
               @click="hideMenu"
             />
-            <RouterLink to="/register" class="max-sm:px-4">
+            <RouterLink
+              to="/register"
+              class="max-sm:px-4"
+              v-if="$route.path != '/register' && $route.path != '/success'"
+            >
               <ButtonLink
                 class="2xl:py-4 2xl:px-6 py-2 px-4 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:w-full"
                 text="Buat Akun"
