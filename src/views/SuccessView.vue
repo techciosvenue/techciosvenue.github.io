@@ -1,7 +1,9 @@
 <template>
   <secion class="flex flex-wrap justify-center">
     <div class="relative w-card-container">
-      <div class="flex pt-72 pb-56 max-sm:pt-32 max-sm:pb-32 text-center">
+      <div
+        class="flex pt-40 pb-40 2xl:pt-72 2xl:pb-56 max-sm:pt-32 max-sm:pb-32 text-center"
+      >
         <div class="flex flex-col justify-center">
           <div class="mb-9">
             <img :src="IconCheck" alt="" class="mx-auto" />
