@@ -5,7 +5,9 @@
         class="grid max-sm:grid-cols-1 grid-cols-2 gap-4 max-sm:gap-10 items-center"
       >
         <div class="relative max-sm:order-last">
-          <div class="flex align-top content-start justify-start gap-8">
+          <div
+            class="flex max-sm:flex-wrap align-top content-start justify-start gap-8"
+          >
             <img :src="logo" alt="" />
             <div>
               <div class="font-normal mt-4">
@@ -43,7 +45,9 @@
               </div>
             </div>
           </div> -->
-          <div class="flex flex-row gap-4 justify-end">
+          <div
+            class="flex flex-row gap-4 justify-end max-sm:grid max-sm:justify-start"
+          >
             <ButtonLink class="c-grey-500" text="Solusi" />
             <ButtonLink class="c-grey-500" text="Keuntungan" />
             <ButtonLink class="c-grey-500" text="Cara mulai" />
