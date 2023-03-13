@@ -1,34 +1,27 @@
+import { useStore } from "@/stores/index.js";
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import RegisterView from "../views/RegisterView.vue";
-import SuccessView from "../views/SuccessView.vue";
+
+export const routes = [
+  {
+    path: "/",
+    name: "home",
+    component: () => import("../views/HomeView.vue"),
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: () => import("../views/RegisterView.vue"),
+  },
+  {
+    path: "/success",
+    name: "success",
+    component: () => import("../views/SuccessView.vue"),
+  },
+];
 
 const router = createRouter({
-  mode: "hash",
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: HomeView,
-    },
-    {
-      path: "/register",
-      name: "register",
-      component: RegisterView,
-    },
-    {
-      path: "/success",
-      name: "success",
-      component: SuccessView,
-    },
-
-    {
-      path: "/:catchAll(.*)",
-      name: "home",
-      component: HomeView,
-    },
-  ],
+  history: createWebHistory(),
+  routes,
 });
 
 export default router;

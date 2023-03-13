@@ -22,6 +22,7 @@
           class="max-sm:fixed max-sm:w-full max-sm:top-20 max-sm:bg-white max-sm:left-0 max-sm:py-4 max-sm:hidden"
         >
           <div class="flex flex-row gap-4 max-sm:flex-col">
+            <!-- {{ store.authuser.session }} -->
             <RouterLink to="/">
               <ButtonLink
                 class="2xl:py-4 2xl:px-6 py-2 px-4 c-blue-500 font-semibold max-sm:border-b max-sm:border-gray-400 max-sm:w-full"
@@ -47,7 +48,7 @@
             >
               <ButtonLink
                 class="2xl:py-4 2xl:px-6 py-2 px-4 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:w-full"
-                text="Buat Akun"
+                text="Join Waiting List"
               />
             </RouterLink>
           </div>
@@ -86,7 +87,7 @@
             >
               <ButtonLink
                 class="2xl:py-4 2xl:px-6 py-2 px-4 text-white b-green-500 font-semibold rounded-lg 2xl:rounded-2xl max-sm:w-full"
-                text="Buat Akun"
+                text="Join Waiting List"
                 @click="hideMenu"
               />
             </RouterLink>
@@ -101,6 +102,7 @@
 import logo from "../../../public/icon/logo.svg";
 import IconBar from "../../../public/icon/IconBar.svg";
 import ButtonLink from "../Button/ButtonLink.vue";
+import { useStore } from "@/stores/index.js";
 
 export default {
   name: "header",
@@ -110,7 +112,6 @@ export default {
   created() {
     window.addEventListener("scroll", this.handleScroll);
   },
-
   data() {
     return {
       isMenu: false,
@@ -118,6 +119,11 @@ export default {
       logo: logo,
       IconBar: IconBar,
     };
+  },
+  setup() {
+    const store = useStore();
+
+    return { store };
   },
   methods: {
     handleScroll() {
